@@ -241,7 +241,7 @@ export function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2 }}
-        className="absolute bottom-4 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-4  left-1/2 transform -translate-x-1/2"
       >
         <div className="flex flex-col items-center space-y-2 text-muted-foreground">
           <span className="text-sm">Scroll to explore</span>

@@ -3,6 +3,7 @@ import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { BlogSection } from "@/components/home/blog-section"
 import { NewsletterSection } from "@/components/home/newsletter-section"
+import { ServiceHighlights } from "@/components/home/service-highlights"
 
 export default function HomePage() {
   return (
@@ -10,6 +11,7 @@ export default function HomePage() {
       <Header />
       <main className="flex-1">
         <HeroSection />
+        <ServiceHighlights />
         <BlogSection />
         <NewsletterSection />
       </main>
