@@ -92,10 +92,10 @@ export default function CartPage() {
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                   >
                     <div className="flex gap-4">
-                      {/* Product Image */}
+                      {/* Product Img */}
                       <div className="w-24 h-24 rounded-lg overflow-hidden bg-gray-100">
-                        <img
-                          src={item.image || "/placeholder.svg"}
+                        <Img
+                          src={item.Img || "/placeholder.svg"}
                           alt={item.name}
                           className="w-full h-full object-cover"
                         />

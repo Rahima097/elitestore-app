@@ -8,7 +8,7 @@ export interface User {
   name: string
   email: string
   password?: string
-  image?: string | null
+  Img?: string | null
   role: "user" | "admin"
   provider?: string
   address?: {
@@ -36,7 +36,7 @@ export interface Product {
   originalPrice: number
   category: string
   brand: string
-  images: Array<{
+  Imgs: Array<{
     url: string
     alt: string
   }>
@@ -70,7 +70,7 @@ export interface Order {
     quantity: number
     price: number
     name: string
-    image: string
+    Img: string
   }>
   shippingAddress: {
     name: string

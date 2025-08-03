@@ -5,6 +5,8 @@ import { BlogSection } from "@/components/home/blog-section"
 import { NewsletterSection } from "@/components/home/newsletter-section"
 import { ServiceHighlights } from "@/components/home/service-highlights"
 import { FeaturedProducts } from "@/components/home/featured-products"
+import { PopularCategories } from "@/components/home/popular-categories"
+import { DailyDeals } from "@/components/home/daily-deals"
 
 export default function HomePage() {
   return (
@@ -13,7 +15,9 @@ export default function HomePage() {
       <main className="flex-1">
         <HeroSection />
         <ServiceHighlights />
-        <FeaturedProducts/>       
+        <PopularCategories />
+        <FeaturedProducts/>
+        <DailyDeals />       
         <BlogSection />
         <NewsletterSection />
       </main>

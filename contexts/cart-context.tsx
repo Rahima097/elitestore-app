@@ -9,7 +9,7 @@ interface CartItem {
   id: string
   name: string
   price: number
-  image: string
+  Img: string
   quantity: number
   size?: string
   color?: string

@@ -52,7 +52,7 @@ export async function POST(request: NextRequest) {
     // Set default values
     const product = {
       ...productData,
-      images: productData.images || [],
+      Imgs: productData.Imgs || [],
       rating: { average: 0, count: 0 },
       specifications: productData.specifications || [],
       tags: productData.tags || [],

@@ -21,7 +21,7 @@ const products = [
     originalPrice: 399.99,
     rating: 4.8,
     reviews: 124,
-    image: "/images/products/Premium Wireless Headphones.jpg?height=300&width=300",
+    Img: "/Imgs/products/Premium Wireless Headphones.jpg?height=300&width=300",
     category: "Electronics",
     brand: "AudioTech",
     inStock: true,
@@ -34,7 +34,7 @@ const products = [
     originalPrice: 249.99,
     rating: 4.9,
     reviews: 89,
-    image: "/images/products/Designer Leather Jacket.jpg?height=300&width=300",
+    Img: "/Imgs/products/Designer Leather Jacket.jpg?height=300&width=300",
     category: "Fashion",
     brand: "StyleCo",
     inStock: true,
@@ -47,7 +47,7 @@ const products = [
     originalPrice: 299.99,
     rating: 4.7,
     reviews: 156,
-    image: "/images/products/Smart Fitness Watch.jpg?height=300&width=300",
+    Img: "/Imgs/products/Smart Fitness Watch.jpg?height=300&width=300",
     category: "Electronics",
     brand: "FitTech",
     inStock: true,
@@ -60,7 +60,7 @@ const products = [
     originalPrice: 99.99,
     rating: 4.6,
     reviews: 203,
-    image: "/images/products/Minimalist Backpack.jpg?height=300&width=300",
+    Img: "/Imgs/products/Minimalist Backpack.jpg?height=300&width=300",
     category: "Accessories",
     brand: "UrbanGear",
     inStock: false,
@@ -73,7 +73,7 @@ const products = [
     originalPrice: 199.99,
     rating: 4.9,
     reviews: 78,
-    image: "/images/products/Organic Skincare Set.jpg?height=300&width=300",
+    Img: "/Imgs/products/Organic Skincare Set.jpg?height=300&width=300",
     category: "Beauty",
     brand: "NaturalGlow",
     inStock: true,
@@ -86,7 +86,7 @@ const products = [
     originalPrice: 799.99,
     rating: 4.8,
     reviews: 45,
-    image: "/images/products/Professional Camera Lens.jpg?height=300&width=300",
+    Img: "/Imgs/products/Professional Camera Lens.jpg?height=300&width=300",
     category: "Electronics",
     brand: "PhotoPro",
     inStock: true,
@@ -332,10 +332,10 @@ export default function ProductsPage() {
                     }`}
                   >
                     <CardContent className={`p-0 ${viewMode === "list" ? "flex w-full" : ""}`}>
-                      {/* Product Image */}
+                      {/* Product Img */}
                       <div className={`relative overflow-hidden ${viewMode === "list" ? "w-48 flex-shrink-0" : ""}`}>
-                        <img
-                          src={product.image || "/placeholder.svg"}
+                        <Img
+                          src={product.Img || "/placeholder.svg"}
                           alt={product.name}
                           className={`object-cover group-hover:scale-110 transition-transform duration-500 ${
                             viewMode === "list" ? "w-full h-48" : "w-full h-64"
